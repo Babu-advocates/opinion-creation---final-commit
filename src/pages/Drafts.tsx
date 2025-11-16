@@ -16,6 +16,7 @@ interface Draft {
   updated_at: string;
   placeholders: Record<string, string>;
   documents: any[];
+  deeds: any;
 }
 
 const Drafts = () => {
@@ -64,6 +65,7 @@ const Drafts = () => {
         draftData: {
           placeholders: draft.placeholders,
           documents: draft.documents,
+          deeds: draft.deeds,
         },
       },
     });
